@@ -1,4 +1,4 @@
-# E-MAIL REGEX
+# E-MAIL REGEX FOR BEGINNERS
 
 In this tutorial, I am going to cover the email address validation process using a regex pattern. Regex is short for the words "regular experssion". "Regular Expression" is a sequence of patterns that are used for string matching.  
 
