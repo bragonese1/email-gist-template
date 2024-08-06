@@ -16,11 +16,14 @@ These symbols are a pattern that are designed to check if a string is a valid em
 <br>
 Here is a breakdown of the symbols used in the regex pattern using the example email "fullstack@gmail.com":
 <br>
-/^([a-z0-9_\.-]+) = fullstack portion of the email
+- ([a-z0-9_\.-]+) = "fullstack" portion of the email
 <br>
-@([\da-z\.-]+)\ = @gmail portion (as you can see the @ symbol)
+- @([\da-z\.-]+) = "@gmail" portion (as you can see the '@')
 <br>
-.([a-z\.]{2,6})$/ = .com (as you can see it starts with the .)
+- .([a-z\.]{2,6}) = ".com" (as you can see it starts with the '.')
+<br>
+
+Further breakdown can be found below.
 
 
 ## Table of Contents
@@ -37,9 +40,20 @@ Here is a breakdown of the symbols used in the regex pattern using the example e
 ## Regex Components
 
 ### Anchors
+Anchors are like the start and end markers of a string.
+<br>
+- ^ = the caret is the start of the string
+- $ = the dollar sign is the end of the string
+
+These start and end markers make sure that the entire string is validated and not just a part of it.
 
 ### Quantifiers
+Quantifiers function is similar to what it sounds like. It is like the counter of the regex. It gives a count of how many time the regex pattern should continue.
+<br>
+- `+` is similar to addition and is adding one or more to the previous.
+<br>
 
+For Example, in our previous example fullstack@gmail.com. The section `([a-z0-9_\.-]+)` that equalled the "fullstack" portion of our example email, ends with a `+`. This makes sures that the email before the `@` can have one or more of the characrters that are contained in the parenthesis.
 ### Grouping Constructs
 
 ### Bracket Expressions
