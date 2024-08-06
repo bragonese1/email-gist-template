@@ -69,11 +69,10 @@ Character classes are used to match a single character or can be used for shorth
 - `[\da-z\.-]` = the '\.' is a shorthand for a period.
 
 ### The OR Operator
-
+The OR operator or "|" is not used in our email regex. But, it is used just like the name suggests. 1|2 would look to match 1 or 2.
 ### Flags
-
+Flags are not used in our email regex either. These can be used to create optional rules that change how a regex behaves.
 ### Character Escapes
-
+Character escapres are refering to the portion of our email regex that can be found in between the parenthesis of our domain and top domain and shown as `\.` which is representing a period or 'dot'. If the slash is not used then the dot would not be specifically looked for as a match.
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello, I'm Bradley Ragonese. I am a fullstack student who is still very much in the learning process and trying build a solid foundation of coding. This tutorial is not only written to aid myself, but also hopefully provide aid to other newbies. You can contact me at my [GitHub](https://github.com/bragonese1) and you can find this repo at this location [Github Repo](https://github.com/bragonese1/email-gist-template).
