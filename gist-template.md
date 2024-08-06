@@ -4,7 +4,24 @@ In this tutorial, I am going to cover the email address validation process using
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex pattern for email validation is as follows:
+<br>
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+<br>
+
+These symbols are a pattern that are designed to check if a string is a valid email. Though these symbols seem like that are a little random if you break it down it almost starts to resemble an email address.
+<br>
+<br>
+Here is a breakdown of the symbols used in the regex pattern using the example email "fullstack@gmail.com":
+<br>
+/^([a-z0-9_\.-]+) = fullstack portion of the email
+<br>
+@([\da-z\.-]+)\ = @gmail portion (as you can see the @ symbol)
+<br>
+.([a-z\.]{2,6})$/ = .com (as you can see it starts with the .)
+
 
 ## Table of Contents
 
