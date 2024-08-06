@@ -55,10 +55,18 @@ Quantifiers function is similar to what it sounds like. It is like the counter o
 
 For Example, in our previous example fullstack@gmail.com. The section `([a-z0-9_\.-]+)` that equalled the "fullstack" portion of our example email, ends with a `+`. This makes sures that the email before the `@` can have one or more of the characrters that are contained in the parenthesis.
 ### Grouping Constructs
-
+The (parenthesis) as shown in the example above are used throughout our email regex for character grouping. The parenthesis break down the email regex into username, domain name, and top level domain.
 ### Bracket Expressions
+The [brackets] are used to define the classes of the characters that we want to match. We will use the username portion to illustrate what that means:
+<br>
+
+`[a-z0-9_\.-]` = the 'a-z' matches letters, '0-9' matches digits, `_\.-` matches an underscore, dot, or hyphen that is in the username of the email.
 
 ### Character Classes
+Character classes are used to match a single character or can be used for shorthand. Lets use the domain name portion of our email example:
+<br>
+- `[\da-z\.-]` = the '\d' is a shorthand for digits.
+- `[\da-z\.-]` = the '\.' is a shorthand for a period.
 
 ### The OR Operator
 
